@@ -12,9 +12,9 @@ So können zum Beispiel leicht eigene ZF/NF- Filter im Zeitbereich, oder mittels
 
 ## RF-Frontends für das SDR_ESP32.
 
-Das SDR_ESP32 hat natürlich durch die Nutzung der I2S-Audiocodecs nur eine relativ geringe Bandbeite (<< 100 kHz) und somit die Funktion eines Basisbandprozessors. Es kann ohne weitere Hilfe nicht direkt die ZF-Frequenzen (455 kHz, 10.7 MHz) gängiger Radios abtasten oder als Direktempfänger gar den Kurzwellenbereich empfangen. Auch die I/Q-Signalgenerierung (Q = 90° Phasenversatz zu I) muss beim ESP32_SDR noch extern erfolgen. Das ist aber relativ einfach mit den längst bekannten und gängigen I/Q-Mischerschaltungen, die mit gerigem Bauteil und IC-Einsatz auskommen und günstig herzustellen sind. 
+Das SDR_ESP32 hat natürlich durch die Nutzung der I2S-Audiocodecs nur eine relativ geringe Bandbeite (<< 100 kHz) und somit die Funktion eines Basisbandprozessors. Es kann ohne weitere Hilfe nicht direkt die ZF-Frequenzen (455 kHz, 10.7 MHz) gängiger Radios abtasten oder als Direktempfänger gar den Kurzwellenbereich empfangen. Auch die I/Q-Signalgenerierung (Q = 90° Phasenversatz zu I) muss beim ESP32_SDR noch extern erfolgen. Das ist aber relativ einfach und mit den längst bekannten und gängigen I/Q-Mischerschaltungen, die mit gerigem Bauteil und IC-Einsatz auskommen und günstig herzustellen sind, realisierbar. Ein Großteil kommerzieller SDR-Empfänger (Radios, Fernseher, Funktelefone) nutzen solche Mischer, um auf eine LOW-IF oder gar ZERO-IF zu kommen, also eine Umsetzung von HF direkt auf 0 kHz (DC), um dort eine Basisbandverabeitung zu machen. 
 
-Beispiel ist der bekannte DR2-Mischer:
+Beispiel eines der bekanntesten I/Q-Mischer im Hobbybereich, der DR2-xx-Mischer:
 ![5](https://github.com/BM45/SDR_ESP32/blob/main/pics4www/5.jpg)
 
 Viele Bauvorschläge, PCBs und Schaltpläne liegen in der Dokumentation unter https://github.com/BM45/SDR_ESP32/blob/main/datasheets/QRP%20YU1LM%20SDR-RX%20TX.pdf
@@ -23,7 +23,7 @@ Auch Fertigprojekte wie das Elektor-SDR-Shield lassen sich leicht für dieses SD
 
 ![3](https://github.com/BM45/SDR_ESP32/blob/main/pics4www/3.jpg)
 
-Wer keine Lust aufs Bauen hat, kann auch mit den vielen weltweit vertretenen Kiwi-SDRs ein I/Q-Signal zu Testzwecken erzeugen.
+Wer erstmal keine Lust aufs Bauen hat, kann auch mit den vielen weltweit vertretenen Kiwi-SDRs ein I/Q-Signal zu Testzwecken erzeugen.
 Eine Karte mit öffentlichen Empfängern gibt es unter http://rx.linkfanel.net/ .
 
 In der Weboberfläche wählt man unter den Demodulationsarten "IQ" aus, damit umgeht man den Demodulator im Kiwi und schickt ein I/Q-Rohsignal über die Soundkarte des PCs zum ESP32. Für Test- und Entwicklungszwecke sehr gut nutzbar, ohne den Lötkolben auch nur einmal angeheizt zu haben.
