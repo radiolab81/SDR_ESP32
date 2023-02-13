@@ -1,1 +1,3 @@
 # SDR_ESP32
+
+Ein experimenteller Softwarebaukasten für Software Defined Radios auf Basis eines ESP32 (Audio Kits) mit Hilfe des ESP-IDF/ADF und ESP-DSP Frameworks. 
