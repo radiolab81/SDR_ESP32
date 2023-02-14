@@ -30,4 +30,5 @@ In der Weboberfläche wählt man unter den Demodulationsarten "IQ" aus, damit um
 
 ![4](https://github.com/BM45/SDR_ESP32/blob/main/pics4www/4.jpg)
 
-[![](http://img.youtube.com/vi/cSQKa7eCEfE/0.jpg)](https://youtu.be/WcKr4DwqQLU "")
+In Aktion:
+[![](https://github.com/BM45/SDR_ESP32/blob/main/pics4www/yt.jpg)](https://youtu.be/WcKr4DwqQLU "")
