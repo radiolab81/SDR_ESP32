@@ -1,5 +1,5 @@
 # SDR_ESP32 
-## 1.Release am Welttag des Radios (World Radio Day) 2023 (13/02/2023)
+## Zur Erinnerung an den Welttag des Radios 2023/World Radio Day 2023 (13/02/2023) - 1. Release
 
 Ein **experimenteller** Softwarebaukasten für Software Defined Radios (oder andere DSP-Spielereien) auf Basis eines ESP32 (Audio Kits) und mit Hilfe des ESP-IDF/ADF und ESP-DSP Frameworks realisiert. 
 
