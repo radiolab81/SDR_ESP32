@@ -29,3 +29,5 @@ Eine Karte mit öffentlichen Empfängern gibt es unter http://rx.linkfanel.net/ 
 In der Weboberfläche wählt man unter den Demodulationsarten "IQ" aus, damit umgeht man den Demodulator im Kiwi und schickt ein I/Q-Rohsignal über die Soundkarte des PCs zum ESP32. Für Test- und Entwicklungszwecke sehr gut nutzbar, ohne den Lötkolben auch nur einmal angeheizt zu haben.
 
 ![4](https://github.com/BM45/SDR_ESP32/blob/main/pics4www/4.jpg)
+
+[![](http://img.youtube.com/vi/cSQKa7eCEfE/0.jpg)](https://youtu.be/WcKr4DwqQLU "")
